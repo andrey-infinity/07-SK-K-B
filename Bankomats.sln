@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bankomats", "Bankomats\Bankomats.csproj", "{AAD421C8-B87E-47CB-A827-392F8C803789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A751B6BB-987E-43C8-94B9-CA23B564A61E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankomatsWorkflow", "BankomatsWorkflow\BankomatsWorkflow.csproj", "{D621467A-F09C-4004-91AC-D320FE02A968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAD421C8-B87E-47CB-A827-392F8C803789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD421C8-B87E-47CB-A827-392F8C803789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD421C8-B87E-47CB-A827-392F8C803789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD421C8-B87E-47CB-A827-392F8C803789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A751B6BB-987E-43C8-94B9-CA23B564A61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A751B6BB-987E-43C8-94B9-CA23B564A61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A751B6BB-987E-43C8-94B9-CA23B564A61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A751B6BB-987E-43C8-94B9-CA23B564A61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D621467A-F09C-4004-91AC-D320FE02A968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D621467A-F09C-4004-91AC-D320FE02A968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D621467A-F09C-4004-91AC-D320FE02A968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D621467A-F09C-4004-91AC-D320FE02A968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

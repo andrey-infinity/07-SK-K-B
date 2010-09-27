@@ -1,0 +1,396 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="BankomatsWorkflow" Location="30, 30" Size="725, 838" AutoSize="False" AutoSizeMargin="16, 24" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Authenticate" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="SetAuthState" SourceStateName="SelectLanguage" SourceConnectionEdge="Right" TargetActivity="Authenticate" SourceActivity="SelectLanguage" EventHandlerName="GetLanguage">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="432" Y="278" />
+				<ns0:Point X="506" Y="278" />
+				<ns0:Point X="506" Y="206" />
+				<ns0:Point X="611" Y="206" />
+				<ns0:Point X="611" Y="214" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="ViewBalance" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity6" SourceStateName="Menu" SourceConnectionEdge="Right" TargetActivity="ViewBalance" SourceActivity="Menu" EventHandlerName="SelectActionToDo">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="265" Y="466" />
+				<ns0:Point X="312" Y="466" />
+				<ns0:Point X="312" Y="620" />
+				<ns0:Point X="160" Y="620" />
+				<ns0:Point X="160" Y="632" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Withdrawal" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity7" SourceStateName="Menu" SourceConnectionEdge="Right" TargetActivity="Withdrawal" SourceActivity="Menu" EventHandlerName="SelectActionToDo">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="265" Y="466" />
+				<ns0:Point X="317" Y="466" />
+				<ns0:Point X="317" Y="746" />
+				<ns0:Point X="616" Y="746" />
+				<ns0:Point X="616" Y="758" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Deposit" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity5" SourceStateName="Menu" SourceConnectionEdge="Right" TargetActivity="Deposit" SourceActivity="Menu" EventHandlerName="SelectActionToDo">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="265" Y="466" />
+				<ns0:Point X="543" Y="466" />
+				<ns0:Point X="543" Y="565" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Final" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity4" SourceStateName="Menu" SourceConnectionEdge="Right" TargetActivity="Final" SourceActivity="Menu" EventHandlerName="SelectActionToDo">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="265" Y="466" />
+				<ns0:Point X="317" Y="466" />
+				<ns0:Point X="317" Y="400" />
+				<ns0:Point X="637" Y="400" />
+				<ns0:Point X="637" Y="408" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="EnterOldPin" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity8" SourceStateName="Menu" SourceConnectionEdge="Right" TargetActivity="EnterOldPin" SourceActivity="Menu" EventHandlerName="SelectActionToDo">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="265" Y="466" />
+				<ns0:Point X="358" Y="466" />
+				<ns0:Point X="358" Y="757" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="EnterCard" SourceConnectionIndex="0" TargetConnectionEdge="Top" SetStateName="setStateActivity2" SourceStateName="Final" SourceConnectionEdge="Right" TargetActivity="EnterCard" SourceActivity="Final" EventHandlerName="stateInitializationActivity1">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="721" Y="449" />
+				<ns0:Point X="733" Y="449" />
+				<ns0:Point X="733" Y="203" />
+				<ns0:Point X="149" Y="203" />
+				<ns0:Point X="149" Y="235" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Menu" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="SetMenuState" SourceStateName="Authenticate" SourceConnectionEdge="Right" TargetActivity="Menu" SourceActivity="Authenticate" EventHandlerName="GetPin">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="603" Y="279" />
+				<ns0:Point X="705" Y="279" />
+				<ns0:Point X="705" Y="389" />
+				<ns0:Point X="217" Y="389" />
+				<ns0:Point X="217" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Final" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity3" SourceStateName="Authenticate" SourceConnectionEdge="Right" TargetActivity="Final" SourceActivity="Authenticate" EventHandlerName="GetPin">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="603" Y="279" />
+				<ns0:Point X="709" Y="279" />
+				<ns0:Point X="709" Y="396" />
+				<ns0:Point X="637" Y="396" />
+				<ns0:Point X="637" Y="408" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Final" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="ExitFromBalance" SourceStateName="ViewBalance" SourceConnectionEdge="Right" TargetActivity="Final" SourceActivity="ViewBalance" EventHandlerName="MenuOrExit">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="177" Y="697" />
+				<ns0:Point X="733" Y="697" />
+				<ns0:Point X="733" Y="400" />
+				<ns0:Point X="637" Y="400" />
+				<ns0:Point X="637" Y="408" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Menu" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity1" SourceStateName="ViewBalance" SourceConnectionEdge="Right" TargetActivity="Menu" SourceActivity="ViewBalance" EventHandlerName="MenuOrExit">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="177" Y="697" />
+				<ns0:Point X="257" Y="697" />
+				<ns0:Point X="257" Y="620" />
+				<ns0:Point X="121" Y="620" />
+				<ns0:Point X="121" Y="393" />
+				<ns0:Point X="217" Y="393" />
+				<ns0:Point X="217" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="SelectLanguage" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="SetSelectLanguageState" SourceStateName="EnterCard" SourceConnectionEdge="Right" TargetActivity="SelectLanguage" SourceActivity="EnterCard" EventHandlerName="EnterCardEvent">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="187" Y="300" />
+				<ns0:Point X="249" Y="300" />
+				<ns0:Point X="249" Y="205" />
+				<ns0:Point X="406" Y="205" />
+				<ns0:Point X="406" Y="213" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="EnterNewPin" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity9" SourceStateName="EnterOldPin" SourceConnectionEdge="Right" TargetActivity="EnterNewPin" SourceActivity="EnterOldPin" EventHandlerName="eventDrivenActivity1">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="418" Y="822" />
+				<ns0:Point X="458" Y="822" />
+				<ns0:Point X="458" Y="848" />
+				<ns0:Point X="730" Y="848" />
+				<ns0:Point X="730" Y="120" />
+				<ns0:Point X="210" Y="120" />
+				<ns0:Point X="210" Y="128" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetConnectionIndex="0" TargetStateName="Menu" SourceConnectionIndex="1" TargetConnectionEdge="Top" SetStateName="setStateActivity10" SourceStateName="EnterNewPin" SourceConnectionEdge="Right" TargetActivity="Menu" SourceActivity="EnterNewPin" EventHandlerName="eventDrivenActivity2">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="270" Y="193" />
+				<ns0:Point X="305" Y="193" />
+				<ns0:Point X="305" Y="389" />
+				<ns0:Point X="217" Y="389" />
+				<ns0:Point X="217" Y="401" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Name="SelectLanguage" Location="319, 213" Size="175, 94" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="InitLanguage" Location="327, 244">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="ViewLanguageMenu" Location="337, 316" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="110, 222" Name="GetLanguage" Location="327, 268">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="GetLanguageHandle" Location="337, 340" />
+						<SetStateDesigner Size="90, 50" Name="SetAuthState" Location="337, 410" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Menu" Location="130, 401" Size="175, 94" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="InitMenu" Location="138, 432">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="ViewMenuText" Location="148, 504" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="208, 520" Name="SelectActionToDo" Location="138, 456">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="GetActionToDo" Location="197, 528" />
+						<ConditionedActivityGroupDesigner Size="188, 348" Name="conditionedActivityGroup1" ShowPreview="True" Location="148, 598">
+							<ConditionedActivityGroupDesigner.Designers>
+								<SequenceDesigner Size="110, 222" Name="compensatableSequenceActivity1" Location="187, 708">
+									<SequenceDesigner.Designers>
+										<CodeDesigner Size="90, 40" Name="codeActivity5" Location="197, 780" />
+										<SetStateDesigner Size="90, 50" Name="setStateActivity6" Location="197, 850" />
+									</SequenceDesigner.Designers>
+								</SequenceDesigner>
+								<SequenceDesigner Size="110, 222" Name="compensatableSequenceActivity2" Location="187, 922">
+									<SequenceDesigner.Designers>
+										<CodeDesigner Size="90, 40" Name="codeActivity7" Location="197, 994" />
+										<SetStateDesigner Size="90, 50" Name="setStateActivity7" Location="197, 1064" />
+									</SequenceDesigner.Designers>
+								</SequenceDesigner>
+								<SequenceDesigner Size="110, 222" Name="compensatableSequenceActivity3" Location="187, 1174">
+									<SequenceDesigner.Designers>
+										<CodeDesigner Size="90, 40" Name="codeActivity8" Location="197, 1246" />
+										<SetStateDesigner Size="90, 50" Name="setStateActivity5" Location="197, 1316" />
+									</SequenceDesigner.Designers>
+								</SequenceDesigner>
+								<SequenceDesigner Size="110, 152" Name="compensatableSequenceActivity4" Location="187, 1426">
+									<SequenceDesigner.Designers>
+										<SetStateDesigner Size="90, 50" Name="setStateActivity4" Location="197, 1498" />
+									</SequenceDesigner.Designers>
+								</SequenceDesigner>
+								<SequenceDesigner Size="110, 222" Name="compensatableSequenceActivity5" Location="187, 1608">
+									<SequenceDesigner.Designers>
+										<CodeDesigner Size="90, 40" Name="codeActivity1" Location="197, 1680" />
+										<SetStateDesigner Size="90, 50" Name="setStateActivity8" Location="197, 1750" />
+									</SequenceDesigner.Designers>
+								</SequenceDesigner>
+								<CancellationHandlerActivityDesigner Size="110, 129" Name="cancellationHandlerActivity1" Location="324, 336" />
+							</ConditionedActivityGroupDesigner.Designers>
+						</ConditionedActivityGroupDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Final" Location="550, 408" Size="175, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 152" Name="stateInitializationActivity1" Location="558, 439">
+					<StateInitializationDesigner.Designers>
+						<SetStateDesigner Size="90, 50" Name="setStateActivity2" Location="568, 511" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Authenticate" Location="524, 214" Size="175, 94" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="InitAuth" Location="532, 245">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity1" Location="542, 317" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="492, 700" Name="GetPin" Location="532, 269">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="GetPinHandle" Location="733, 341" />
+						<IfElseDesigner Size="472, 528" Name="ifElseActivity2" Location="542, 411">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="301, 426" Name="ifElseBranchActivity3" Location="561, 483">
+									<IfElseBranchDesigner.Designers>
+										<IfElseDesigner Size="281, 324" Name="ifElseActivity1" Location="571, 555">
+											<IfElseDesigner.Designers>
+												<IfElseBranchDesigner Size="110, 222" Name="ifElseBranchActivity1" Location="590, 627">
+													<IfElseBranchDesigner.Designers>
+														<SetStateDesigner Size="90, 50" Name="SetMenuState" Location="600, 734" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+												<IfElseBranchDesigner Size="110, 222" Name="ifElseBranchActivity2" Location="723, 627">
+													<IfElseBranchDesigner.Designers>
+														<CallExternalMethodActivityDesigner Size="90, 40" Name="AuthFailed" Location="733, 699" />
+														<SetStateDesigner Size="90, 50" Name="setStateActivity3" Location="733, 769" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+											</IfElseDesigner.Designers>
+										</IfElseDesigner>
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 426" Name="ifElseBranchActivity4" Location="885, 483">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="ViewCurrentPin" Location="895, 697" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="ViewBalance" Location="73, 632" Size="175, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="InitBalace" Location="81, 663">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity9" Location="91, 735" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="301, 426" Name="MenuOrExit" Location="81, 687">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="handleExternalEventActivity1" Location="186, 759" />
+						<IfElseDesigner Size="281, 254" Name="ifElseActivity3" Location="91, 829">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="110, 152" Name="ifElseBranchActivity7" Location="110, 901">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="90, 50" Name="ExitFromBalance" Location="120, 973" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 152" Name="ifElseBranchActivity8" Location="243, 901">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="90, 50" Name="setStateActivity1" Location="253, 973" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="EnterCard" Location="62, 235" Size="175, 94" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 212" Name="Init" Location="70, 266">
+					<StateInitializationDesigner.Designers>
+						<CodeDesigner Size="90, 40" Name="InitCode" Location="80, 338" />
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="DisplayWelcomeMessage" Location="80, 408" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="301, 426" Name="EnterCardEvent" Location="70, 290">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="ReadCardNumber" Location="175, 362" />
+						<IfElseDesigner Size="281, 254" Name="ReadCardIfElse" Location="80, 432">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="110, 152" Name="ifElseBranchActivity5" Location="99, 504">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="90, 50" Name="SetSelectLanguageState" Location="109, 576" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 152" Name="ifElseBranchActivity6" Location="232, 504">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="ViewCurrentCardNumber" Location="242, 581" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Withdrawal" Location="529, 758" Size="175, 80" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="stateInitializationActivity5" Location="537, 789">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity8" Location="547, 861" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="Deposit" Location="456, 565" Size="175, 80" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="stateInitializationActivity7" Location="464, 596">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity10" Location="474, 668" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<EventDrivenDesigner Size="110, 142" Name="ActionHandler" Location="38, 61">
+			<EventDrivenDesigner.Designers>
+				<HandleExternalEventActivityDesigner Size="90, 40" Name="handleExternalEventActivity6" Location="48, 133" />
+			</EventDrivenDesigner.Designers>
+		</EventDrivenDesigner>
+		<EventDrivenDesigner Size="110, 142" Name="NumHandler" Location="38, 85">
+			<EventDrivenDesigner.Designers>
+				<HandleExternalEventActivityDesigner Size="90, 40" Name="handleExternalEventActivity5" Location="48, 157" />
+			</EventDrivenDesigner.Designers>
+		</EventDrivenDesigner>
+		<StateDesigner Name="EnterOldPin" Location="271, 757" Size="175, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="stateInitializationActivity2" Location="279, 788">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity4" Location="289, 860" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="434, 496" Name="eventDrivenActivity1" Location="279, 812">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="handleExternalEventActivity2" Location="451, 884" />
+						<IfElseDesigner Size="414, 324" Name="ifElseActivity4" Location="289, 954">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="110, 222" Name="ifElseBranchActivity9" Location="308, 1026">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Size="90, 50" Name="setStateActivity9" Location="318, 1098" />
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity5" Location="318, 1178" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 222" Name="ifElseBranchActivity10" Location="441, 1026">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity3" Location="451, 1138" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 222" Name="ifElseBranchActivity11" Location="574, 1026">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity2" Location="584, 1138" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Name="EnterNewPin" Location="123, 128" Size="175, 80" AutoSize="False" AutoSizeMargin="16, 24">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Size="110, 142" Name="stateInitializationActivity3" Location="128, 135">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity6" Location="138, 207" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Size="301, 636" Name="eventDrivenActivity2" Location="136, 148">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Size="90, 40" Name="handleExternalEventActivity3" Location="241, 220" />
+						<IfElseDesigner Size="281, 464" Name="ifElseActivity5" Location="146, 290">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Size="110, 362" Name="ifElseBranchActivity12" Location="165, 362">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity12" Location="175, 434" />
+										<CodeDesigner Size="90, 40" Name="codeActivity2" Location="175, 504" />
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity11" Location="175, 574" />
+										<SetStateDesigner Size="90, 50" Name="setStateActivity10" Location="175, 644" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Size="110, 362" Name="ifElseBranchActivity13" Location="298, 362">
+									<IfElseBranchDesigner.Designers>
+										<CallExternalMethodActivityDesigner Size="90, 40" Name="callExternalMethodActivity7" Location="308, 544" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

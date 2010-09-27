@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Accounts>
+  <Account id="1234">
+    <accountPIN>1234</accountPIN>
+    <accountTotalBalance>1000</accountTotalBalance>
+    <accountAvailableBalance>2000</accountAvailableBalance>
+  </Account>
+  <Account id="5678">
+    <accountPIN>5678</accountPIN>
+    <accountTotalBalance>2000</accountTotalBalance>
+    <accountAvailableBalance>1000</accountAvailableBalance>
+  </Account>
+</Accounts>
